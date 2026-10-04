@@ -1,0 +1,1318 @@
+{
+  "title": "Tanzania Postcodes & Addresses",
+  "subtitle": "Region, district, ward postcodes and streets for all 26 mainland regions",
+  "description": "# Tanzania Postcodes & Addresses\n\nEvery region, district, ward, and street in mainland Tanzania, with its postcode (*Anwani za Makazi*).\n\n## What's inside\n\n| Item | Count |\n| --- | --- |\n| Regions | 26 (all of mainland Tanzania) |\n| Districts / councils | 158 |\n| Wards (unique postcodes) | 3,945 |\n| Street / village records | 68,571 |\n\n## Files\n\n| File | Contents |\n| --- | --- |\n| `all_tanzania.csv` | All 26 regions combined (68,571 rows) |\n| `arusha.csv`, `dar_es_salaam.csv`, `dodoma.csv`, … | One file per region, with the same columns |\n\n## Columns\n\n| Column | Description | Example |\n| --- | --- | --- |\n| `region` | Region name (*mkoa*) | `ARUSHA` |\n| `region_code` | 2-digit region postcode prefix | `23` |\n| `district` | District or council name (*wilaya*) | `ARUSHA CBD` |\n| `district_code` | 3-digit district postcode prefix | `231` |\n| `ward` | Ward name (*kata*) | `SEKEI` |\n| `ward_code` | 5-digit ward postcode | `23101` |\n| `street` | Street or village (*mtaa / kijiji*) | `SANAWARI` |\n| `places` | Hamlet or local place name (*kitongoji*). Often empty. | |\n\n## SQL\n\nFor a PostgreSQL version of this dataset, go to [https://github.com/Henryle-hd/Napa-Open-Address.git](https://github.com/Henryle-hd/Napa-Open-Address.git)\n",
+  "id": "henrydioniz/tanzania-postcodes-addresses",
+  "isPrivate": true,
+  "licenses": [
+    {
+      "name": "other"
+    }
+  ],
+  "keywords": [
+    "africa",
+    "geography",
+    "government",
+    "cities and urban areas",
+    "tabular"
+  ],
+  "expectedUpdateFrequency": "annually",
+  "resources": [
+    {
+      "path": "all_tanzania.csv",
+      "description": "All 26 regions of mainland Tanzania in one file: 68,571 street records, 158 districts, 3,945 wards. Same columns as the per-region files.",
+      "schema": {
+        "fields": [
+          {
+            "name": "region",
+            "description": "Region name (mkoa)",
+            "type": "province"
+          },
+          {
+            "name": "region_code",
+            "description": "2-digit regional postcode prefix",
+            "type": "string"
+          },
+          {
+            "name": "district",
+            "description": "District / council name (wilaya)",
+            "type": "city"
+          },
+          {
+            "name": "district_code",
+            "description": "3-digit district postcode prefix (2-digit postal zone for Dar es Salaam)",
+            "type": "string"
+          },
+          {
+            "name": "ward",
+            "description": "Ward name (kata)",
+            "type": "string"
+          },
+          {
+            "name": "ward_code",
+            "description": "5-digit ward postcode - the postcode used in a Tanzanian address",
+            "type": "postalcode"
+          },
+          {
+            "name": "street",
+            "description": "Street / village name (mtaa / kijiji); may be empty",
+            "type": "string"
+          },
+          {
+            "name": "places",
+            "description": "Hamlet or local place name (kitongoji / eneo); often empty",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "path": "dar_es_salaam.csv",
+      "description": "Postcodes for Dar es Salaam Region (region code 11): 565 street records across 6 districts and 102 wards.",
+      "schema": {
+        "fields": [
+          {
+            "name": "region",
+            "description": "Region name (mkoa)",
+            "type": "province"
+          },
+          {
+            "name": "region_code",
+            "description": "2-digit regional postcode prefix",
+            "type": "string"
+          },
+          {
+            "name": "district",
+            "description": "District / council name (wilaya)",
+            "type": "city"
+          },
+          {
+            "name": "district_code",
+            "description": "3-digit district postcode prefix (2-digit postal zone for Dar es Salaam)",
+            "type": "string"
+          },
+          {
+            "name": "ward",
+            "description": "Ward name (kata)",
+            "type": "string"
+          },
+          {
+            "name": "ward_code",
+            "description": "5-digit ward postcode - the postcode used in a Tanzanian address",
+            "type": "postalcode"
+          },
+          {
+            "name": "street",
+            "description": "Street / village name (mtaa / kijiji); may be empty",
+            "type": "string"
+          },
+          {
+            "name": "places",
+            "description": "Hamlet or local place name (kitongoji / eneo); often empty",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "path": "tanga.csv",
+      "description": "Postcodes for Tanga Region (region code 21): 4,872 street records across 9 districts and 245 wards.",
+      "schema": {
+        "fields": [
+          {
+            "name": "region",
+            "description": "Region name (mkoa)",
+            "type": "province"
+          },
+          {
+            "name": "region_code",
+            "description": "2-digit regional postcode prefix",
+            "type": "string"
+          },
+          {
+            "name": "district",
+            "description": "District / council name (wilaya)",
+            "type": "city"
+          },
+          {
+            "name": "district_code",
+            "description": "3-digit district postcode prefix (2-digit postal zone for Dar es Salaam)",
+            "type": "string"
+          },
+          {
+            "name": "ward",
+            "description": "Ward name (kata)",
+            "type": "string"
+          },
+          {
+            "name": "ward_code",
+            "description": "5-digit ward postcode - the postcode used in a Tanzanian address",
+            "type": "postalcode"
+          },
+          {
+            "name": "street",
+            "description": "Street / village name (mtaa / kijiji); may be empty",
+            "type": "string"
+          },
+          {
+            "name": "places",
+            "description": "Hamlet or local place name (kitongoji / eneo); often empty",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "path": "arusha.csv",
+      "description": "Postcodes for Arusha Region (region code 23): 1,643 street records across 7 districts and 158 wards.",
+      "schema": {
+        "fields": [
+          {
+            "name": "region",
+            "description": "Region name (mkoa)",
+            "type": "province"
+          },
+          {
+            "name": "region_code",
+            "description": "2-digit regional postcode prefix",
+            "type": "string"
+          },
+          {
+            "name": "district",
+            "description": "District / council name (wilaya)",
+            "type": "city"
+          },
+          {
+            "name": "district_code",
+            "description": "3-digit district postcode prefix (2-digit postal zone for Dar es Salaam)",
+            "type": "string"
+          },
+          {
+            "name": "ward",
+            "description": "Ward name (kata)",
+            "type": "string"
+          },
+          {
+            "name": "ward_code",
+            "description": "5-digit ward postcode - the postcode used in a Tanzanian address",
+            "type": "postalcode"
+          },
+          {
+            "name": "street",
+            "description": "Street / village name (mtaa / kijiji); may be empty",
+            "type": "string"
+          },
+          {
+            "name": "places",
+            "description": "Hamlet or local place name (kitongoji / eneo); often empty",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "path": "kilimanjaro.csv",
+      "description": "Postcodes for Kilimanjaro Region (region code 25): 2,319 street records across 7 districts and 168 wards.",
+      "schema": {
+        "fields": [
+          {
+            "name": "region",
+            "description": "Region name (mkoa)",
+            "type": "province"
+          },
+          {
+            "name": "region_code",
+            "description": "2-digit regional postcode prefix",
+            "type": "string"
+          },
+          {
+            "name": "district",
+            "description": "District / council name (wilaya)",
+            "type": "city"
+          },
+          {
+            "name": "district_code",
+            "description": "3-digit district postcode prefix (2-digit postal zone for Dar es Salaam)",
+            "type": "string"
+          },
+          {
+            "name": "ward",
+            "description": "Ward name (kata)",
+            "type": "string"
+          },
+          {
+            "name": "ward_code",
+            "description": "5-digit ward postcode - the postcode used in a Tanzanian address",
+            "type": "postalcode"
+          },
+          {
+            "name": "street",
+            "description": "Street / village name (mtaa / kijiji); may be empty",
+            "type": "string"
+          },
+          {
+            "name": "places",
+            "description": "Hamlet or local place name (kitongoji / eneo); often empty",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "path": "manyara.csv",
+      "description": "Postcodes for Manyara Region (region code 27): 2,066 street records across 6 districts and 142 wards.",
+      "schema": {
+        "fields": [
+          {
+            "name": "region",
+            "description": "Region name (mkoa)",
+            "type": "province"
+          },
+          {
+            "name": "region_code",
+            "description": "2-digit regional postcode prefix",
+            "type": "string"
+          },
+          {
+            "name": "district",
+            "description": "District / council name (wilaya)",
+            "type": "city"
+          },
+          {
+            "name": "district_code",
+            "description": "3-digit district postcode prefix (2-digit postal zone for Dar es Salaam)",
+            "type": "string"
+          },
+          {
+            "name": "ward",
+            "description": "Ward name (kata)",
+            "type": "string"
+          },
+          {
+            "name": "ward_code",
+            "description": "5-digit ward postcode - the postcode used in a Tanzanian address",
+            "type": "postalcode"
+          },
+          {
+            "name": "street",
+            "description": "Street / village name (mtaa / kijiji); may be empty",
+            "type": "string"
+          },
+          {
+            "name": "places",
+            "description": "Hamlet or local place name (kitongoji / eneo); often empty",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "path": "geita.csv",
+      "description": "Postcodes for Geita Region (region code 30): 2,321 street records across 5 districts and 121 wards.",
+      "schema": {
+        "fields": [
+          {
+            "name": "region",
+            "description": "Region name (mkoa)",
+            "type": "province"
+          },
+          {
+            "name": "region_code",
+            "description": "2-digit regional postcode prefix",
+            "type": "string"
+          },
+          {
+            "name": "district",
+            "description": "District / council name (wilaya)",
+            "type": "city"
+          },
+          {
+            "name": "district_code",
+            "description": "3-digit district postcode prefix (2-digit postal zone for Dar es Salaam)",
+            "type": "string"
+          },
+          {
+            "name": "ward",
+            "description": "Ward name (kata)",
+            "type": "string"
+          },
+          {
+            "name": "ward_code",
+            "description": "5-digit ward postcode - the postcode used in a Tanzanian address",
+            "type": "postalcode"
+          },
+          {
+            "name": "street",
+            "description": "Street / village name (mtaa / kijiji); may be empty",
+            "type": "string"
+          },
+          {
+            "name": "places",
+            "description": "Hamlet or local place name (kitongoji / eneo); often empty",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "path": "mara.csv",
+      "description": "Postcodes for Mara Region (region code 31): 2,839 street records across 6 districts and 178 wards.",
+      "schema": {
+        "fields": [
+          {
+            "name": "region",
+            "description": "Region name (mkoa)",
+            "type": "province"
+          },
+          {
+            "name": "region_code",
+            "description": "2-digit regional postcode prefix",
+            "type": "string"
+          },
+          {
+            "name": "district",
+            "description": "District / council name (wilaya)",
+            "type": "city"
+          },
+          {
+            "name": "district_code",
+            "description": "3-digit district postcode prefix (2-digit postal zone for Dar es Salaam)",
+            "type": "string"
+          },
+          {
+            "name": "ward",
+            "description": "Ward name (kata)",
+            "type": "string"
+          },
+          {
+            "name": "ward_code",
+            "description": "5-digit ward postcode - the postcode used in a Tanzanian address",
+            "type": "postalcode"
+          },
+          {
+            "name": "street",
+            "description": "Street / village name (mtaa / kijiji); may be empty",
+            "type": "string"
+          },
+          {
+            "name": "places",
+            "description": "Hamlet or local place name (kitongoji / eneo); often empty",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "path": "mwanza.csv",
+      "description": "Postcodes for Mwanza Region (region code 33): 3,791 street records across 7 districts and 191 wards.",
+      "schema": {
+        "fields": [
+          {
+            "name": "region",
+            "description": "Region name (mkoa)",
+            "type": "province"
+          },
+          {
+            "name": "region_code",
+            "description": "2-digit regional postcode prefix",
+            "type": "string"
+          },
+          {
+            "name": "district",
+            "description": "District / council name (wilaya)",
+            "type": "city"
+          },
+          {
+            "name": "district_code",
+            "description": "3-digit district postcode prefix (2-digit postal zone for Dar es Salaam)",
+            "type": "string"
+          },
+          {
+            "name": "ward",
+            "description": "Ward name (kata)",
+            "type": "string"
+          },
+          {
+            "name": "ward_code",
+            "description": "5-digit ward postcode - the postcode used in a Tanzanian address",
+            "type": "postalcode"
+          },
+          {
+            "name": "street",
+            "description": "Street / village name (mtaa / kijiji); may be empty",
+            "type": "string"
+          },
+          {
+            "name": "places",
+            "description": "Hamlet or local place name (kitongoji / eneo); often empty",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "path": "kagera.csv",
+      "description": "Postcodes for Kagera Region (region code 35): 3,773 street records across 8 districts and 198 wards.",
+      "schema": {
+        "fields": [
+          {
+            "name": "region",
+            "description": "Region name (mkoa)",
+            "type": "province"
+          },
+          {
+            "name": "region_code",
+            "description": "2-digit regional postcode prefix",
+            "type": "string"
+          },
+          {
+            "name": "district",
+            "description": "District / council name (wilaya)",
+            "type": "city"
+          },
+          {
+            "name": "district_code",
+            "description": "3-digit district postcode prefix (2-digit postal zone for Dar es Salaam)",
+            "type": "string"
+          },
+          {
+            "name": "ward",
+            "description": "Ward name (kata)",
+            "type": "string"
+          },
+          {
+            "name": "ward_code",
+            "description": "5-digit ward postcode - the postcode used in a Tanzanian address",
+            "type": "postalcode"
+          },
+          {
+            "name": "street",
+            "description": "Street / village name (mtaa / kijiji); may be empty",
+            "type": "string"
+          },
+          {
+            "name": "places",
+            "description": "Hamlet or local place name (kitongoji / eneo); often empty",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "path": "shinyanga.csv",
+      "description": "Postcodes for Shinyanga Region (region code 37): 2,838 street records across 4 districts and 130 wards.",
+      "schema": {
+        "fields": [
+          {
+            "name": "region",
+            "description": "Region name (mkoa)",
+            "type": "province"
+          },
+          {
+            "name": "region_code",
+            "description": "2-digit regional postcode prefix",
+            "type": "string"
+          },
+          {
+            "name": "district",
+            "description": "District / council name (wilaya)",
+            "type": "city"
+          },
+          {
+            "name": "district_code",
+            "description": "3-digit district postcode prefix (2-digit postal zone for Dar es Salaam)",
+            "type": "string"
+          },
+          {
+            "name": "ward",
+            "description": "Ward name (kata)",
+            "type": "string"
+          },
+          {
+            "name": "ward_code",
+            "description": "5-digit ward postcode - the postcode used in a Tanzanian address",
+            "type": "postalcode"
+          },
+          {
+            "name": "street",
+            "description": "Street / village name (mtaa / kijiji); may be empty",
+            "type": "string"
+          },
+          {
+            "name": "places",
+            "description": "Hamlet or local place name (kitongoji / eneo); often empty",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "path": "simiyu.csv",
+      "description": "Postcodes for Simiyu Region (region code 39): 2,799 street records across 5 districts and 133 wards.",
+      "schema": {
+        "fields": [
+          {
+            "name": "region",
+            "description": "Region name (mkoa)",
+            "type": "province"
+          },
+          {
+            "name": "region_code",
+            "description": "2-digit regional postcode prefix",
+            "type": "string"
+          },
+          {
+            "name": "district",
+            "description": "District / council name (wilaya)",
+            "type": "city"
+          },
+          {
+            "name": "district_code",
+            "description": "3-digit district postcode prefix (2-digit postal zone for Dar es Salaam)",
+            "type": "string"
+          },
+          {
+            "name": "ward",
+            "description": "Ward name (kata)",
+            "type": "string"
+          },
+          {
+            "name": "ward_code",
+            "description": "5-digit ward postcode - the postcode used in a Tanzanian address",
+            "type": "postalcode"
+          },
+          {
+            "name": "street",
+            "description": "Street / village name (mtaa / kijiji); may be empty",
+            "type": "string"
+          },
+          {
+            "name": "places",
+            "description": "Hamlet or local place name (kitongoji / eneo); often empty",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "path": "dodoma.csv",
+      "description": "Postcodes for Dodoma Region (region code 41): 3,606 street records across 8 districts and 209 wards.",
+      "schema": {
+        "fields": [
+          {
+            "name": "region",
+            "description": "Region name (mkoa)",
+            "type": "province"
+          },
+          {
+            "name": "region_code",
+            "description": "2-digit regional postcode prefix",
+            "type": "string"
+          },
+          {
+            "name": "district",
+            "description": "District / council name (wilaya)",
+            "type": "city"
+          },
+          {
+            "name": "district_code",
+            "description": "3-digit district postcode prefix (2-digit postal zone for Dar es Salaam)",
+            "type": "string"
+          },
+          {
+            "name": "ward",
+            "description": "Ward name (kata)",
+            "type": "string"
+          },
+          {
+            "name": "ward_code",
+            "description": "5-digit ward postcode - the postcode used in a Tanzanian address",
+            "type": "postalcode"
+          },
+          {
+            "name": "street",
+            "description": "Street / village name (mtaa / kijiji); may be empty",
+            "type": "string"
+          },
+          {
+            "name": "places",
+            "description": "Hamlet or local place name (kitongoji / eneo); often empty",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "path": "singida.csv",
+      "description": "Postcodes for Singida Region (region code 43): 2,364 street records across 6 districts and 136 wards.",
+      "schema": {
+        "fields": [
+          {
+            "name": "region",
+            "description": "Region name (mkoa)",
+            "type": "province"
+          },
+          {
+            "name": "region_code",
+            "description": "2-digit regional postcode prefix",
+            "type": "string"
+          },
+          {
+            "name": "district",
+            "description": "District / council name (wilaya)",
+            "type": "city"
+          },
+          {
+            "name": "district_code",
+            "description": "3-digit district postcode prefix (2-digit postal zone for Dar es Salaam)",
+            "type": "string"
+          },
+          {
+            "name": "ward",
+            "description": "Ward name (kata)",
+            "type": "string"
+          },
+          {
+            "name": "ward_code",
+            "description": "5-digit ward postcode - the postcode used in a Tanzanian address",
+            "type": "postalcode"
+          },
+          {
+            "name": "street",
+            "description": "Street / village name (mtaa / kijiji); may be empty",
+            "type": "string"
+          },
+          {
+            "name": "places",
+            "description": "Hamlet or local place name (kitongoji / eneo); often empty",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "path": "tabora.csv",
+      "description": "Postcodes for Tabora Region (region code 45): 3,865 street records across 7 districts and 206 wards.",
+      "schema": {
+        "fields": [
+          {
+            "name": "region",
+            "description": "Region name (mkoa)",
+            "type": "province"
+          },
+          {
+            "name": "region_code",
+            "description": "2-digit regional postcode prefix",
+            "type": "string"
+          },
+          {
+            "name": "district",
+            "description": "District / council name (wilaya)",
+            "type": "city"
+          },
+          {
+            "name": "district_code",
+            "description": "3-digit district postcode prefix (2-digit postal zone for Dar es Salaam)",
+            "type": "string"
+          },
+          {
+            "name": "ward",
+            "description": "Ward name (kata)",
+            "type": "string"
+          },
+          {
+            "name": "ward_code",
+            "description": "5-digit ward postcode - the postcode used in a Tanzanian address",
+            "type": "postalcode"
+          },
+          {
+            "name": "street",
+            "description": "Street / village name (mtaa / kijiji); may be empty",
+            "type": "string"
+          },
+          {
+            "name": "places",
+            "description": "Hamlet or local place name (kitongoji / eneo); often empty",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "path": "kigoma.csv",
+      "description": "Postcodes for Kigoma Region (region code 47): 1,719 street records across 7 districts and 103 wards.",
+      "schema": {
+        "fields": [
+          {
+            "name": "region",
+            "description": "Region name (mkoa)",
+            "type": "province"
+          },
+          {
+            "name": "region_code",
+            "description": "2-digit regional postcode prefix",
+            "type": "string"
+          },
+          {
+            "name": "district",
+            "description": "District / council name (wilaya)",
+            "type": "city"
+          },
+          {
+            "name": "district_code",
+            "description": "3-digit district postcode prefix (2-digit postal zone for Dar es Salaam)",
+            "type": "string"
+          },
+          {
+            "name": "ward",
+            "description": "Ward name (kata)",
+            "type": "string"
+          },
+          {
+            "name": "ward_code",
+            "description": "5-digit ward postcode - the postcode used in a Tanzanian address",
+            "type": "postalcode"
+          },
+          {
+            "name": "street",
+            "description": "Street / village name (mtaa / kijiji); may be empty",
+            "type": "string"
+          },
+          {
+            "name": "places",
+            "description": "Hamlet or local place name (kitongoji / eneo); often empty",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "path": "katavi.csv",
+      "description": "Postcodes for Katavi Region (region code 50): 975 street records across 3 districts and 58 wards.",
+      "schema": {
+        "fields": [
+          {
+            "name": "region",
+            "description": "Region name (mkoa)",
+            "type": "province"
+          },
+          {
+            "name": "region_code",
+            "description": "2-digit regional postcode prefix",
+            "type": "string"
+          },
+          {
+            "name": "district",
+            "description": "District / council name (wilaya)",
+            "type": "city"
+          },
+          {
+            "name": "district_code",
+            "description": "3-digit district postcode prefix (2-digit postal zone for Dar es Salaam)",
+            "type": "string"
+          },
+          {
+            "name": "ward",
+            "description": "Ward name (kata)",
+            "type": "string"
+          },
+          {
+            "name": "ward_code",
+            "description": "5-digit ward postcode - the postcode used in a Tanzanian address",
+            "type": "postalcode"
+          },
+          {
+            "name": "street",
+            "description": "Street / village name (mtaa / kijiji); may be empty",
+            "type": "string"
+          },
+          {
+            "name": "places",
+            "description": "Hamlet or local place name (kitongoji / eneo); often empty",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "path": "iringa.csv",
+      "description": "Postcodes for Iringa Region (region code 51): 2,077 street records across 4 districts and 106 wards.",
+      "schema": {
+        "fields": [
+          {
+            "name": "region",
+            "description": "Region name (mkoa)",
+            "type": "province"
+          },
+          {
+            "name": "region_code",
+            "description": "2-digit regional postcode prefix",
+            "type": "string"
+          },
+          {
+            "name": "district",
+            "description": "District / council name (wilaya)",
+            "type": "city"
+          },
+          {
+            "name": "district_code",
+            "description": "3-digit district postcode prefix (2-digit postal zone for Dar es Salaam)",
+            "type": "string"
+          },
+          {
+            "name": "ward",
+            "description": "Ward name (kata)",
+            "type": "string"
+          },
+          {
+            "name": "ward_code",
+            "description": "5-digit ward postcode - the postcode used in a Tanzanian address",
+            "type": "postalcode"
+          },
+          {
+            "name": "street",
+            "description": "Street / village name (mtaa / kijiji); may be empty",
+            "type": "string"
+          },
+          {
+            "name": "places",
+            "description": "Hamlet or local place name (kitongoji / eneo); often empty",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "path": "mbeya.csv",
+      "description": "Postcodes for Mbeya Region (region code 53): 3,151 street records across 6 districts and 179 wards.",
+      "schema": {
+        "fields": [
+          {
+            "name": "region",
+            "description": "Region name (mkoa)",
+            "type": "province"
+          },
+          {
+            "name": "region_code",
+            "description": "2-digit regional postcode prefix",
+            "type": "string"
+          },
+          {
+            "name": "district",
+            "description": "District / council name (wilaya)",
+            "type": "city"
+          },
+          {
+            "name": "district_code",
+            "description": "3-digit district postcode prefix (2-digit postal zone for Dar es Salaam)",
+            "type": "string"
+          },
+          {
+            "name": "ward",
+            "description": "Ward name (kata)",
+            "type": "string"
+          },
+          {
+            "name": "ward_code",
+            "description": "5-digit ward postcode - the postcode used in a Tanzanian address",
+            "type": "postalcode"
+          },
+          {
+            "name": "street",
+            "description": "Street / village name (mtaa / kijiji); may be empty",
+            "type": "string"
+          },
+          {
+            "name": "places",
+            "description": "Hamlet or local place name (kitongoji / eneo); often empty",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "path": "songwe.csv",
+      "description": "Postcodes for Songwe Region (region code 54): 1,555 street records across 4 districts and 93 wards.",
+      "schema": {
+        "fields": [
+          {
+            "name": "region",
+            "description": "Region name (mkoa)",
+            "type": "province"
+          },
+          {
+            "name": "region_code",
+            "description": "2-digit regional postcode prefix",
+            "type": "string"
+          },
+          {
+            "name": "district",
+            "description": "District / council name (wilaya)",
+            "type": "city"
+          },
+          {
+            "name": "district_code",
+            "description": "3-digit district postcode prefix (2-digit postal zone for Dar es Salaam)",
+            "type": "string"
+          },
+          {
+            "name": "ward",
+            "description": "Ward name (kata)",
+            "type": "string"
+          },
+          {
+            "name": "ward_code",
+            "description": "5-digit ward postcode - the postcode used in a Tanzanian address",
+            "type": "postalcode"
+          },
+          {
+            "name": "street",
+            "description": "Street / village name (mtaa / kijiji); may be empty",
+            "type": "string"
+          },
+          {
+            "name": "places",
+            "description": "Hamlet or local place name (kitongoji / eneo); often empty",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "path": "rukwa.csv",
+      "description": "Postcodes for Rukwa Region (region code 55): 2,021 street records across 4 districts and 97 wards.",
+      "schema": {
+        "fields": [
+          {
+            "name": "region",
+            "description": "Region name (mkoa)",
+            "type": "province"
+          },
+          {
+            "name": "region_code",
+            "description": "2-digit regional postcode prefix",
+            "type": "string"
+          },
+          {
+            "name": "district",
+            "description": "District / council name (wilaya)",
+            "type": "city"
+          },
+          {
+            "name": "district_code",
+            "description": "3-digit district postcode prefix (2-digit postal zone for Dar es Salaam)",
+            "type": "string"
+          },
+          {
+            "name": "ward",
+            "description": "Ward name (kata)",
+            "type": "string"
+          },
+          {
+            "name": "ward_code",
+            "description": "5-digit ward postcode - the postcode used in a Tanzanian address",
+            "type": "postalcode"
+          },
+          {
+            "name": "street",
+            "description": "Street / village name (mtaa / kijiji); may be empty",
+            "type": "string"
+          },
+          {
+            "name": "places",
+            "description": "Hamlet or local place name (kitongoji / eneo); often empty",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "path": "ruvuma.csv",
+      "description": "Postcodes for Ruvuma Region (region code 57): 3,893 street records across 6 districts and 173 wards.",
+      "schema": {
+        "fields": [
+          {
+            "name": "region",
+            "description": "Region name (mkoa)",
+            "type": "province"
+          },
+          {
+            "name": "region_code",
+            "description": "2-digit regional postcode prefix",
+            "type": "string"
+          },
+          {
+            "name": "district",
+            "description": "District / council name (wilaya)",
+            "type": "city"
+          },
+          {
+            "name": "district_code",
+            "description": "3-digit district postcode prefix (2-digit postal zone for Dar es Salaam)",
+            "type": "string"
+          },
+          {
+            "name": "ward",
+            "description": "Ward name (kata)",
+            "type": "string"
+          },
+          {
+            "name": "ward_code",
+            "description": "5-digit ward postcode - the postcode used in a Tanzanian address",
+            "type": "postalcode"
+          },
+          {
+            "name": "street",
+            "description": "Street / village name (mtaa / kijiji); may be empty",
+            "type": "string"
+          },
+          {
+            "name": "places",
+            "description": "Hamlet or local place name (kitongoji / eneo); often empty",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "path": "njombe.csv",
+      "description": "Postcodes for Njombe Region (region code 59): 1,910 street records across 5 districts and 107 wards.",
+      "schema": {
+        "fields": [
+          {
+            "name": "region",
+            "description": "Region name (mkoa)",
+            "type": "province"
+          },
+          {
+            "name": "region_code",
+            "description": "2-digit regional postcode prefix",
+            "type": "string"
+          },
+          {
+            "name": "district",
+            "description": "District / council name (wilaya)",
+            "type": "city"
+          },
+          {
+            "name": "district_code",
+            "description": "3-digit district postcode prefix (2-digit postal zone for Dar es Salaam)",
+            "type": "string"
+          },
+          {
+            "name": "ward",
+            "description": "Ward name (kata)",
+            "type": "string"
+          },
+          {
+            "name": "ward_code",
+            "description": "5-digit ward postcode - the postcode used in a Tanzanian address",
+            "type": "postalcode"
+          },
+          {
+            "name": "street",
+            "description": "Street / village name (mtaa / kijiji); may be empty",
+            "type": "string"
+          },
+          {
+            "name": "places",
+            "description": "Hamlet or local place name (kitongoji / eneo); often empty",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "path": "pwani.csv",
+      "description": "Postcodes for Pwani Region (region code 61): 1,729 street records across 8 districts and 133 wards.",
+      "schema": {
+        "fields": [
+          {
+            "name": "region",
+            "description": "Region name (mkoa)",
+            "type": "province"
+          },
+          {
+            "name": "region_code",
+            "description": "2-digit regional postcode prefix",
+            "type": "string"
+          },
+          {
+            "name": "district",
+            "description": "District / council name (wilaya)",
+            "type": "city"
+          },
+          {
+            "name": "district_code",
+            "description": "3-digit district postcode prefix (2-digit postal zone for Dar es Salaam)",
+            "type": "string"
+          },
+          {
+            "name": "ward",
+            "description": "Ward name (kata)",
+            "type": "string"
+          },
+          {
+            "name": "ward_code",
+            "description": "5-digit ward postcode - the postcode used in a Tanzanian address",
+            "type": "postalcode"
+          },
+          {
+            "name": "street",
+            "description": "Street / village name (mtaa / kijiji); may be empty",
+            "type": "string"
+          },
+          {
+            "name": "places",
+            "description": "Hamlet or local place name (kitongoji / eneo); often empty",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "path": "mtwara.csv",
+      "description": "Postcodes for Mtwara Region (region code 63): 3,564 street records across 6 districts and 191 wards.",
+      "schema": {
+        "fields": [
+          {
+            "name": "region",
+            "description": "Region name (mkoa)",
+            "type": "province"
+          },
+          {
+            "name": "region_code",
+            "description": "2-digit regional postcode prefix",
+            "type": "string"
+          },
+          {
+            "name": "district",
+            "description": "District / council name (wilaya)",
+            "type": "city"
+          },
+          {
+            "name": "district_code",
+            "description": "3-digit district postcode prefix (2-digit postal zone for Dar es Salaam)",
+            "type": "string"
+          },
+          {
+            "name": "ward",
+            "description": "Ward name (kata)",
+            "type": "string"
+          },
+          {
+            "name": "ward_code",
+            "description": "5-digit ward postcode - the postcode used in a Tanzanian address",
+            "type": "postalcode"
+          },
+          {
+            "name": "street",
+            "description": "Street / village name (mtaa / kijiji); may be empty",
+            "type": "string"
+          },
+          {
+            "name": "places",
+            "description": "Hamlet or local place name (kitongoji / eneo); often empty",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "path": "lindi.csv",
+      "description": "Postcodes for Lindi Region (region code 65): 2,569 street records across 6 districts and 174 wards.",
+      "schema": {
+        "fields": [
+          {
+            "name": "region",
+            "description": "Region name (mkoa)",
+            "type": "province"
+          },
+          {
+            "name": "region_code",
+            "description": "2-digit regional postcode prefix",
+            "type": "string"
+          },
+          {
+            "name": "district",
+            "description": "District / council name (wilaya)",
+            "type": "city"
+          },
+          {
+            "name": "district_code",
+            "description": "3-digit district postcode prefix (2-digit postal zone for Dar es Salaam)",
+            "type": "string"
+          },
+          {
+            "name": "ward",
+            "description": "Ward name (kata)",
+            "type": "string"
+          },
+          {
+            "name": "ward_code",
+            "description": "5-digit ward postcode - the postcode used in a Tanzanian address",
+            "type": "postalcode"
+          },
+          {
+            "name": "street",
+            "description": "Street / village name (mtaa / kijiji); may be empty",
+            "type": "string"
+          },
+          {
+            "name": "places",
+            "description": "Hamlet or local place name (kitongoji / eneo); often empty",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "path": "morogoro.csv",
+      "description": "Postcodes for Morogoro Region (region code 67): 3,747 street records across 8 districts and 214 wards.",
+      "schema": {
+        "fields": [
+          {
+            "name": "region",
+            "description": "Region name (mkoa)",
+            "type": "province"
+          },
+          {
+            "name": "region_code",
+            "description": "2-digit regional postcode prefix",
+            "type": "string"
+          },
+          {
+            "name": "district",
+            "description": "District / council name (wilaya)",
+            "type": "city"
+          },
+          {
+            "name": "district_code",
+            "description": "3-digit district postcode prefix (2-digit postal zone for Dar es Salaam)",
+            "type": "string"
+          },
+          {
+            "name": "ward",
+            "description": "Ward name (kata)",
+            "type": "string"
+          },
+          {
+            "name": "ward_code",
+            "description": "5-digit ward postcode - the postcode used in a Tanzanian address",
+            "type": "postalcode"
+          },
+          {
+            "name": "street",
+            "description": "Street / village name (mtaa / kijiji); may be empty",
+            "type": "string"
+          },
+          {
+            "name": "places",
+            "description": "Hamlet or local place name (kitongoji / eneo); often empty",
+            "type": "string"
+          }
+        ]
+      }
+    }
+  ]
+}
