@@ -3,7 +3,7 @@
   "subtitle": "Region, district, ward postcodes and streets for all 26 mainland regions",
   "description": "# Tanzania Postcodes & Addresses\n\nEvery region, district, ward, and street in mainland Tanzania, with its postcode (*Anwani za Makazi*).\n\n## What's inside\n\n| Item | Count |\n| --- | --- |\n| Regions | 26 (all of mainland Tanzania) |\n| Districts / councils | 158 |\n| Wards (unique postcodes) | 3,945 |\n| Street / village records | 68,571 |\n\n## Files\n\n| File | Contents |\n| --- | --- |\n| `all_tanzania.csv` | All 26 regions combined (68,571 rows) |\n| `arusha.csv`, `dar_es_salaam.csv`, `dodoma.csv`, … | One file per region, with the same columns |\n\n## Columns\n\n| Column | Description | Example |\n| --- | --- | --- |\n| `region` | Region name (*mkoa*) | `ARUSHA` |\n| `region_code` | 2-digit region postcode prefix | `23` |\n| `district` | District or council name (*wilaya*) | `ARUSHA CBD` |\n| `district_code` | 3-digit district postcode prefix | `231` |\n| `ward` | Ward name (*kata*) | `SEKEI` |\n| `ward_code` | 5-digit ward postcode | `23101` |\n| `street` | Street or village (*mtaa / kijiji*) | `SANAWARI` |\n| `places` | Hamlet or local place name (*kitongoji*). Often empty. | |\n\n## SQL\n\nFor a PostgreSQL version of this dataset, go to [https://github.com/Henryle-hd/Napa-Open-Address.git](https://github.com/Henryle-hd/Napa-Open-Address.git)\n",
   "id": "henrydioniz/tanzania-postcodes-addresses",
-  "isPrivate": true,
+  "isPrivate": false,
   "licenses": [
     {
       "name": "other"
@@ -17,6 +17,7 @@
     "tabular"
   ],
   "expectedUpdateFrequency": "annually",
+  "userSpecifiedSources": "Compiled from the official postcode listings for the 26 regions of mainland Tanzania.",
   "resources": [
     {
       "path": "all_tanzania.csv",
@@ -26,7 +27,7 @@
           {
             "name": "region",
             "description": "Region name (mkoa)",
-            "type": "province"
+            "type": "string"
           },
           {
             "name": "region_code",
@@ -36,7 +37,7 @@
           {
             "name": "district",
             "description": "District / council name (wilaya)",
-            "type": "city"
+            "type": "string"
           },
           {
             "name": "district_code",
@@ -51,7 +52,7 @@
           {
             "name": "ward_code",
             "description": "5-digit ward postcode - the postcode used in a Tanzanian address",
-            "type": "postalcode"
+            "type": "string"
           },
           {
             "name": "street",
@@ -74,7 +75,7 @@
           {
             "name": "region",
             "description": "Region name (mkoa)",
-            "type": "province"
+            "type": "string"
           },
           {
             "name": "region_code",
@@ -84,7 +85,7 @@
           {
             "name": "district",
             "description": "District / council name (wilaya)",
-            "type": "city"
+            "type": "string"
           },
           {
             "name": "district_code",
@@ -99,7 +100,7 @@
           {
             "name": "ward_code",
             "description": "5-digit ward postcode - the postcode used in a Tanzanian address",
-            "type": "postalcode"
+            "type": "string"
           },
           {
             "name": "street",
@@ -122,7 +123,7 @@
           {
             "name": "region",
             "description": "Region name (mkoa)",
-            "type": "province"
+            "type": "string"
           },
           {
             "name": "region_code",
@@ -132,7 +133,7 @@
           {
             "name": "district",
             "description": "District / council name (wilaya)",
-            "type": "city"
+            "type": "string"
           },
           {
             "name": "district_code",
@@ -147,7 +148,7 @@
           {
             "name": "ward_code",
             "description": "5-digit ward postcode - the postcode used in a Tanzanian address",
-            "type": "postalcode"
+            "type": "string"
           },
           {
             "name": "street",
@@ -170,7 +171,7 @@
           {
             "name": "region",
             "description": "Region name (mkoa)",
-            "type": "province"
+            "type": "string"
           },
           {
             "name": "region_code",
@@ -180,7 +181,7 @@
           {
             "name": "district",
             "description": "District / council name (wilaya)",
-            "type": "city"
+            "type": "string"
           },
           {
             "name": "district_code",
@@ -195,7 +196,7 @@
           {
             "name": "ward_code",
             "description": "5-digit ward postcode - the postcode used in a Tanzanian address",
-            "type": "postalcode"
+            "type": "string"
           },
           {
             "name": "street",
@@ -218,7 +219,7 @@
           {
             "name": "region",
             "description": "Region name (mkoa)",
-            "type": "province"
+            "type": "string"
           },
           {
             "name": "region_code",
@@ -228,7 +229,7 @@
           {
             "name": "district",
             "description": "District / council name (wilaya)",
-            "type": "city"
+            "type": "string"
           },
           {
             "name": "district_code",
@@ -243,7 +244,7 @@
           {
             "name": "ward_code",
             "description": "5-digit ward postcode - the postcode used in a Tanzanian address",
-            "type": "postalcode"
+            "type": "string"
           },
           {
             "name": "street",
@@ -266,7 +267,7 @@
           {
             "name": "region",
             "description": "Region name (mkoa)",
-            "type": "province"
+            "type": "string"
           },
           {
             "name": "region_code",
@@ -276,7 +277,7 @@
           {
             "name": "district",
             "description": "District / council name (wilaya)",
-            "type": "city"
+            "type": "string"
           },
           {
             "name": "district_code",
@@ -291,7 +292,7 @@
           {
             "name": "ward_code",
             "description": "5-digit ward postcode - the postcode used in a Tanzanian address",
-            "type": "postalcode"
+            "type": "string"
           },
           {
             "name": "street",
@@ -314,7 +315,7 @@
           {
             "name": "region",
             "description": "Region name (mkoa)",
-            "type": "province"
+            "type": "string"
           },
           {
             "name": "region_code",
@@ -324,7 +325,7 @@
           {
             "name": "district",
             "description": "District / council name (wilaya)",
-            "type": "city"
+            "type": "string"
           },
           {
             "name": "district_code",
@@ -339,7 +340,7 @@
           {
             "name": "ward_code",
             "description": "5-digit ward postcode - the postcode used in a Tanzanian address",
-            "type": "postalcode"
+            "type": "string"
           },
           {
             "name": "street",
@@ -362,7 +363,7 @@
           {
             "name": "region",
             "description": "Region name (mkoa)",
-            "type": "province"
+            "type": "string"
           },
           {
             "name": "region_code",
@@ -372,7 +373,7 @@
           {
             "name": "district",
             "description": "District / council name (wilaya)",
-            "type": "city"
+            "type": "string"
           },
           {
             "name": "district_code",
@@ -387,7 +388,7 @@
           {
             "name": "ward_code",
             "description": "5-digit ward postcode - the postcode used in a Tanzanian address",
-            "type": "postalcode"
+            "type": "string"
           },
           {
             "name": "street",
@@ -410,7 +411,7 @@
           {
             "name": "region",
             "description": "Region name (mkoa)",
-            "type": "province"
+            "type": "string"
           },
           {
             "name": "region_code",
@@ -420,7 +421,7 @@
           {
             "name": "district",
             "description": "District / council name (wilaya)",
-            "type": "city"
+            "type": "string"
           },
           {
             "name": "district_code",
@@ -435,7 +436,7 @@
           {
             "name": "ward_code",
             "description": "5-digit ward postcode - the postcode used in a Tanzanian address",
-            "type": "postalcode"
+            "type": "string"
           },
           {
             "name": "street",
@@ -458,7 +459,7 @@
           {
             "name": "region",
             "description": "Region name (mkoa)",
-            "type": "province"
+            "type": "string"
           },
           {
             "name": "region_code",
@@ -468,7 +469,7 @@
           {
             "name": "district",
             "description": "District / council name (wilaya)",
-            "type": "city"
+            "type": "string"
           },
           {
             "name": "district_code",
@@ -483,7 +484,7 @@
           {
             "name": "ward_code",
             "description": "5-digit ward postcode - the postcode used in a Tanzanian address",
-            "type": "postalcode"
+            "type": "string"
           },
           {
             "name": "street",
@@ -506,7 +507,7 @@
           {
             "name": "region",
             "description": "Region name (mkoa)",
-            "type": "province"
+            "type": "string"
           },
           {
             "name": "region_code",
@@ -516,7 +517,7 @@
           {
             "name": "district",
             "description": "District / council name (wilaya)",
-            "type": "city"
+            "type": "string"
           },
           {
             "name": "district_code",
@@ -531,7 +532,7 @@
           {
             "name": "ward_code",
             "description": "5-digit ward postcode - the postcode used in a Tanzanian address",
-            "type": "postalcode"
+            "type": "string"
           },
           {
             "name": "street",
@@ -554,7 +555,7 @@
           {
             "name": "region",
             "description": "Region name (mkoa)",
-            "type": "province"
+            "type": "string"
           },
           {
             "name": "region_code",
@@ -564,7 +565,7 @@
           {
             "name": "district",
             "description": "District / council name (wilaya)",
-            "type": "city"
+            "type": "string"
           },
           {
             "name": "district_code",
@@ -579,7 +580,7 @@
           {
             "name": "ward_code",
             "description": "5-digit ward postcode - the postcode used in a Tanzanian address",
-            "type": "postalcode"
+            "type": "string"
           },
           {
             "name": "street",
@@ -602,7 +603,7 @@
           {
             "name": "region",
             "description": "Region name (mkoa)",
-            "type": "province"
+            "type": "string"
           },
           {
             "name": "region_code",
@@ -612,7 +613,7 @@
           {
             "name": "district",
             "description": "District / council name (wilaya)",
-            "type": "city"
+            "type": "string"
           },
           {
             "name": "district_code",
@@ -627,7 +628,7 @@
           {
             "name": "ward_code",
             "description": "5-digit ward postcode - the postcode used in a Tanzanian address",
-            "type": "postalcode"
+            "type": "string"
           },
           {
             "name": "street",
@@ -650,7 +651,7 @@
           {
             "name": "region",
             "description": "Region name (mkoa)",
-            "type": "province"
+            "type": "string"
           },
           {
             "name": "region_code",
@@ -660,7 +661,7 @@
           {
             "name": "district",
             "description": "District / council name (wilaya)",
-            "type": "city"
+            "type": "string"
           },
           {
             "name": "district_code",
@@ -675,7 +676,7 @@
           {
             "name": "ward_code",
             "description": "5-digit ward postcode - the postcode used in a Tanzanian address",
-            "type": "postalcode"
+            "type": "string"
           },
           {
             "name": "street",
@@ -698,7 +699,7 @@
           {
             "name": "region",
             "description": "Region name (mkoa)",
-            "type": "province"
+            "type": "string"
           },
           {
             "name": "region_code",
@@ -708,7 +709,7 @@
           {
             "name": "district",
             "description": "District / council name (wilaya)",
-            "type": "city"
+            "type": "string"
           },
           {
             "name": "district_code",
@@ -723,7 +724,7 @@
           {
             "name": "ward_code",
             "description": "5-digit ward postcode - the postcode used in a Tanzanian address",
-            "type": "postalcode"
+            "type": "string"
           },
           {
             "name": "street",
@@ -746,7 +747,7 @@
           {
             "name": "region",
             "description": "Region name (mkoa)",
-            "type": "province"
+            "type": "string"
           },
           {
             "name": "region_code",
@@ -756,7 +757,7 @@
           {
             "name": "district",
             "description": "District / council name (wilaya)",
-            "type": "city"
+            "type": "string"
           },
           {
             "name": "district_code",
@@ -771,7 +772,7 @@
           {
             "name": "ward_code",
             "description": "5-digit ward postcode - the postcode used in a Tanzanian address",
-            "type": "postalcode"
+            "type": "string"
           },
           {
             "name": "street",
@@ -794,7 +795,7 @@
           {
             "name": "region",
             "description": "Region name (mkoa)",
-            "type": "province"
+            "type": "string"
           },
           {
             "name": "region_code",
@@ -804,7 +805,7 @@
           {
             "name": "district",
             "description": "District / council name (wilaya)",
-            "type": "city"
+            "type": "string"
           },
           {
             "name": "district_code",
@@ -819,7 +820,7 @@
           {
             "name": "ward_code",
             "description": "5-digit ward postcode - the postcode used in a Tanzanian address",
-            "type": "postalcode"
+            "type": "string"
           },
           {
             "name": "street",
@@ -842,7 +843,7 @@
           {
             "name": "region",
             "description": "Region name (mkoa)",
-            "type": "province"
+            "type": "string"
           },
           {
             "name": "region_code",
@@ -852,7 +853,7 @@
           {
             "name": "district",
             "description": "District / council name (wilaya)",
-            "type": "city"
+            "type": "string"
           },
           {
             "name": "district_code",
@@ -867,7 +868,7 @@
           {
             "name": "ward_code",
             "description": "5-digit ward postcode - the postcode used in a Tanzanian address",
-            "type": "postalcode"
+            "type": "string"
           },
           {
             "name": "street",
@@ -890,7 +891,7 @@
           {
             "name": "region",
             "description": "Region name (mkoa)",
-            "type": "province"
+            "type": "string"
           },
           {
             "name": "region_code",
@@ -900,7 +901,7 @@
           {
             "name": "district",
             "description": "District / council name (wilaya)",
-            "type": "city"
+            "type": "string"
           },
           {
             "name": "district_code",
@@ -915,7 +916,7 @@
           {
             "name": "ward_code",
             "description": "5-digit ward postcode - the postcode used in a Tanzanian address",
-            "type": "postalcode"
+            "type": "string"
           },
           {
             "name": "street",
@@ -938,7 +939,7 @@
           {
             "name": "region",
             "description": "Region name (mkoa)",
-            "type": "province"
+            "type": "string"
           },
           {
             "name": "region_code",
@@ -948,7 +949,7 @@
           {
             "name": "district",
             "description": "District / council name (wilaya)",
-            "type": "city"
+            "type": "string"
           },
           {
             "name": "district_code",
@@ -963,7 +964,7 @@
           {
             "name": "ward_code",
             "description": "5-digit ward postcode - the postcode used in a Tanzanian address",
-            "type": "postalcode"
+            "type": "string"
           },
           {
             "name": "street",
@@ -986,7 +987,7 @@
           {
             "name": "region",
             "description": "Region name (mkoa)",
-            "type": "province"
+            "type": "string"
           },
           {
             "name": "region_code",
@@ -996,7 +997,7 @@
           {
             "name": "district",
             "description": "District / council name (wilaya)",
-            "type": "city"
+            "type": "string"
           },
           {
             "name": "district_code",
@@ -1011,7 +1012,7 @@
           {
             "name": "ward_code",
             "description": "5-digit ward postcode - the postcode used in a Tanzanian address",
-            "type": "postalcode"
+            "type": "string"
           },
           {
             "name": "street",
@@ -1034,7 +1035,7 @@
           {
             "name": "region",
             "description": "Region name (mkoa)",
-            "type": "province"
+            "type": "string"
           },
           {
             "name": "region_code",
@@ -1044,7 +1045,7 @@
           {
             "name": "district",
             "description": "District / council name (wilaya)",
-            "type": "city"
+            "type": "string"
           },
           {
             "name": "district_code",
@@ -1059,7 +1060,7 @@
           {
             "name": "ward_code",
             "description": "5-digit ward postcode - the postcode used in a Tanzanian address",
-            "type": "postalcode"
+            "type": "string"
           },
           {
             "name": "street",
@@ -1082,7 +1083,7 @@
           {
             "name": "region",
             "description": "Region name (mkoa)",
-            "type": "province"
+            "type": "string"
           },
           {
             "name": "region_code",
@@ -1092,7 +1093,7 @@
           {
             "name": "district",
             "description": "District / council name (wilaya)",
-            "type": "city"
+            "type": "string"
           },
           {
             "name": "district_code",
@@ -1107,7 +1108,7 @@
           {
             "name": "ward_code",
             "description": "5-digit ward postcode - the postcode used in a Tanzanian address",
-            "type": "postalcode"
+            "type": "string"
           },
           {
             "name": "street",
@@ -1130,7 +1131,7 @@
           {
             "name": "region",
             "description": "Region name (mkoa)",
-            "type": "province"
+            "type": "string"
           },
           {
             "name": "region_code",
@@ -1140,7 +1141,7 @@
           {
             "name": "district",
             "description": "District / council name (wilaya)",
-            "type": "city"
+            "type": "string"
           },
           {
             "name": "district_code",
@@ -1155,7 +1156,7 @@
           {
             "name": "ward_code",
             "description": "5-digit ward postcode - the postcode used in a Tanzanian address",
-            "type": "postalcode"
+            "type": "string"
           },
           {
             "name": "street",
@@ -1178,7 +1179,7 @@
           {
             "name": "region",
             "description": "Region name (mkoa)",
-            "type": "province"
+            "type": "string"
           },
           {
             "name": "region_code",
@@ -1188,7 +1189,7 @@
           {
             "name": "district",
             "description": "District / council name (wilaya)",
-            "type": "city"
+            "type": "string"
           },
           {
             "name": "district_code",
@@ -1203,7 +1204,7 @@
           {
             "name": "ward_code",
             "description": "5-digit ward postcode - the postcode used in a Tanzanian address",
-            "type": "postalcode"
+            "type": "string"
           },
           {
             "name": "street",
@@ -1226,7 +1227,7 @@
           {
             "name": "region",
             "description": "Region name (mkoa)",
-            "type": "province"
+            "type": "string"
           },
           {
             "name": "region_code",
@@ -1236,7 +1237,7 @@
           {
             "name": "district",
             "description": "District / council name (wilaya)",
-            "type": "city"
+            "type": "string"
           },
           {
             "name": "district_code",
@@ -1251,7 +1252,7 @@
           {
             "name": "ward_code",
             "description": "5-digit ward postcode - the postcode used in a Tanzanian address",
-            "type": "postalcode"
+            "type": "string"
           },
           {
             "name": "street",
@@ -1274,7 +1275,7 @@
           {
             "name": "region",
             "description": "Region name (mkoa)",
-            "type": "province"
+            "type": "string"
           },
           {
             "name": "region_code",
@@ -1284,7 +1285,7 @@
           {
             "name": "district",
             "description": "District / council name (wilaya)",
-            "type": "city"
+            "type": "string"
           },
           {
             "name": "district_code",
@@ -1299,7 +1300,7 @@
           {
             "name": "ward_code",
             "description": "5-digit ward postcode - the postcode used in a Tanzanian address",
-            "type": "postalcode"
+            "type": "string"
           },
           {
             "name": "street",
@@ -1313,6 +1314,10 @@
           }
         ]
       }
+    },
+    {
+      "path": "README.md",
+      "description": "Dataset overview: contents, file list and column definitions."
     }
   ]
 }

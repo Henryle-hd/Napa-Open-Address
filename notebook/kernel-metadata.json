@@ -1,0 +1,21 @@
+{
+  "id": "henrydioniz/tanzania-postcodes-getting-started",
+  "title": "Tanzania Postcodes: Getting Started",
+  "code_file": "tanzania-postcodes-getting-started.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": "false",
+  "enable_gpu": "false",
+  "enable_internet": "false",
+  "dataset_sources": [
+    "henrydioniz/tanzania-postcodes-addresses"
+  ],
+  "competition_sources": [],
+  "kernel_sources": [],
+  "model_sources": [],
+  "keywords": [
+    "geography",
+    "africa",
+    "beginner"
+  ]
+}
