@@ -3,7 +3,7 @@
   "subtitle": "Region, district, ward postcodes and streets for all 26 mainland regions",
   "description": "# Tanzania Postcodes & Addresses\n\nEvery region, district, ward, and street in mainland Tanzania, with its postcode (*Anwani za Makazi*).\n\n## What's inside\n\n| Item | Count |\n| --- | --- |\n| Regions | 26 (all of mainland Tanzania) |\n| Districts / councils | 158 |\n| Wards (unique postcodes) | 3,945 |\n| Street / village records | 68,571 |\n\n## Files\n\n| File | Contents |\n| --- | --- |\n| `all_tanzania.csv` | All 26 regions combined (68,571 rows) |\n| `arusha.csv`, `dar_es_salaam.csv`, `dodoma.csv`, … | One file per region, with the same columns |\n\n## Columns\n\n| Column | Description | Example |\n| --- | --- | --- |\n| `region` | Region name (*mkoa*) | `ARUSHA` |\n| `region_code` | 2-digit region postcode prefix | `23` |\n| `district` | District or council name (*wilaya*) | `ARUSHA CBD` |\n| `district_code` | 3-digit district postcode prefix | `231` |\n| `ward` | Ward name (*kata*) | `SEKEI` |\n| `ward_code` | 5-digit ward postcode | `23101` |\n| `street` | Street or village (*mtaa / kijiji*) | `SANAWARI` |\n| `places` | Hamlet or local place name (*kitongoji*). Often empty. | |\n\n## SQL\n\nFor a PostgreSQL version of this dataset, go to [https://github.com/Henryle-hd/Napa-Open-Address.git](https://github.com/Henryle-hd/Napa-Open-Address.git)\n",
   "id": "henrydioniz/tanzania-postcodes-addresses",
-  "isPrivate": true,
+  "isPrivate": false,
   "licenses": [
     {
       "name": "other"
@@ -17,6 +17,7 @@
     "tabular"
   ],
   "expectedUpdateFrequency": "annually",
+  "userSpecifiedSources": "Compiled from the official regional postcode listings for mainland Tanzania, published as one export per region. The 26 regional exports were merged, column headers were standardised (the exports used different header names), and line breaks and repeated spaces inside cells were removed. No rows were dropped and no names or codes were changed. Files are named after their region, and all_tanzania.csv combines every region.",
   "resources": [
     {
       "path": "all_tanzania.csv",
@@ -1313,6 +1314,10 @@
           }
         ]
       }
+    },
+    {
+      "path": "README.md",
+      "description": "Dataset overview: contents, file list and column definitions."
     }
   ]
 }
